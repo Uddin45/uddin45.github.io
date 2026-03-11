@@ -7,223 +7,190 @@
 <style>
 
 body{
-font-family: Arial;
-margin:40px;
-background:#f5f7fa;
+font-family:Arial;
+margin:0;
+background:#eef2f7;
 color:#333;
-line-height:1.6;
-max-width:900px;
+}
+
+.container{
+width:1000px;
 margin:auto;
 }
 
-h1{
-color:#1a3c6e;
-}
-
-h2{
-color:#1a3c6e;
-border-bottom:2px solid #ddd;
-padding-bottom:5px;
-margin-top:40px;
-}
+/* NAVBAR */
 
 nav{
-margin-bottom:25px;
+background:white;
+padding:15px;
+box-shadow:0px 2px 5px rgba(0,0,0,0.1);
 }
 
 nav a{
 margin-right:20px;
 text-decoration:none;
 font-weight:bold;
+color:#2a4dbf;
+}
+
+/* HERO SECTION */
+
+.hero{
+display:flex;
+align-items:center;
+padding:50px 0;
+gap:40px;
+}
+
+.profile-img{
+width:200px;
+border-radius:12px;
+box-shadow:0px 5px 10px rgba(0,0,0,0.15);
+}
+
+.hero-text h1{
+margin:0;
 color:#1a3c6e;
 }
 
-.section{
-margin-top:30px;
-}
-
-.cv-button{
-display:inline-block;
-padding:10px 18px;
-background:#1a3c6e;
-color:white;
-border-radius:6px;
-text-decoration:none;
+.hero-text p{
 margin-top:10px;
 }
 
-.profile{
-display:flex;
-align-items:center;
-gap:20px;
+.buttons a{
+display:inline-block;
+padding:10px 18px;
+margin-right:10px;
+background:#2a4dbf;
+color:white;
+border-radius:6px;
+text-decoration:none;
 }
 
-.profile img{
-width:120px;
-border-radius:6px;
+/* CARDS */
+
+.cards{
+display:flex;
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+flex:1;
+}
+
+h2{
+color:#1a3c6e;
 }
 
 </style>
 
 </head>
 
+
 <body>
+
+<nav class="container">
+
+<a href="#">Home</a>
+<a href="#">Research</a>
+<a href="#">Publications</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
+
+</nav>
+
+
+<div class="container">
+
+<div class="hero">
+
+<img src="profile.jpg" class="profile-img">
+
+<div class="hero-text">
 
 <h1>Ashab Uddin</h1>
 
 <p>
-PhD Candidate – Artificial Intelligence & Deep Reinforcement Learning <br>
-University of Windsor, Canada
+PhD Candidate | Artificial Intelligence | Deep Reinforcement Learning  
+Department of Electrical & Computer Engineering  
+University of Windsor
 </p>
 
-<nav>
+<div class="buttons">
 
-<a href="#about">About</a>
-<a href="#research">Research</a>
 <a href="#publications">Publications</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
+<a href="#research">Research</a>
+<a href="Final_Resume_AshabUddin_Git.pdf" download>Download CV</a>
 
-</nav>
+</div>
 
-<a href="Final_Resume_AshabUddin_Git.pdf" class="cv-button" download>Download CV</a>
+</div>
+
+</div>
 
 
-<div class="section" id="about">
 
-<h2>About</h2>
+<div class="cards">
+
+<div class="card">
+
+<h2>About Me</h2>
 
 <p>
-I am a PhD researcher in Artificial Intelligence at the University of Windsor. My work focuses on deep reinforcement learning and multi-agent decision systems for large-scale cyber-physical networks. I study how learning-based algorithms can enable efficient coordination and resource allocation in dynamic environments such as vehicular edge computing systems.
+I am a PhD researcher working on deep reinforcement learning and multi-agent
+decision systems for vehicular edge computing networks. My research focuses
+on scalable AI frameworks for resource allocation and coordination in
+cyber-physical wireless systems.
 </p>
 
 </div>
 
 
 
-<div class="section" id="research">
-
-<h2>Research Interests</h2>
-
-<ul>
-
-<li>Deep Reinforcement Learning</li>
-<li>Multi-Agent Reinforcement Learning</li>
-<li>Vehicular Edge Computing</li>
-<li>Wireless AI</li>
-<li>Cyber-Physical Systems</li>
-<li>Resource Allocation and Optimization</li>
-
-</ul>
-
-</div>
-
-
-
-<div class="section" id="publications">
-
-<h2>Selected Publications</h2>
-
-<ul>
-
-<li>
-Counterfactual Multi-Agent Deep Reinforcement Learning for Efficient Task Offloading in Vehicular Edge Computing  
-<br>
-<i>IEEE Transactions on Vehicular Technology, 2025</i>
-</li>
-
-<li>
-Adaptive Prioritization and Task Offloading in Vehicular Edge Computing Through Deep Reinforcement Learning  
-<br>
-<i>IEEE Transactions on Vehicular Technology, 2024</i>
-</li>
-
-<li>
-Adaptive Reward Clustering for Efficient Deep Reinforcement Learning in Vehicular Offloading  
-<br>
-<i>IEEE GLOBECOM 2025</i>
-</li>
-
-<li>
-Multi-Agent Task Prioritization and Offloading in Vehicular Edge Computing Environments  
-<br>
-<i>IEEE VTC Fall 2025</i>
-</li>
-
-<li>
-Prioritized Task Offloading in Vehicular Edge Computing Using Deep Reinforcement Learning  
-<br>
-<i>IEEE VTC Spring 2024</i>
-</li>
-
-</ul>
-
-</div>
-
-
-
-<div class="section" id="projects">
-
-<h2>Research Projects</h2>
-
-<ul>
-
-<li>
-<b>Adaptive Reward Clustering and Sampling (ARCS)</b>  
-<br>
-A reinforcement learning experience clustering technique designed to improve convergence stability and sampling efficiency.
-</li>
-
-<br>
-
-<li>
-<b>Priority-Aware Task Offloading in Vehicular Edge Computing</b>  
-<br>
-Multi-agent reinforcement learning framework for resource allocation and task scheduling in dynamic wireless networks.
-</li>
-
-<br>
-
-<li>
-<b>Stackelberg Game Based Resource Allocation</b>  
-<br>
-Hierarchical learning framework integrating reinforcement learning with game-theoretic optimization.
-</li>
-
-</ul>
-
-</div>
-
-
-
-<div class="section" id="contact">
+<div class="card">
 
 <h2>Contact</h2>
 
 <p>
 
-Email: uddin81@uwindsor.ca  
-<br><br>
+Department of Electrical and Computer Engineering  
+University of Windsor  
 
-LinkedIn  
-<br>
-https://www.linkedin.com/in/ashab-uddin-549b576b/
+401 Sunset Avenue  
+Windsor, Ontario  
+Canada
 
-<br><br>
+</p>
 
-Google Scholar  
-<br>
-https://scholar.google.com/citations?user=esJNTh8AAAAJ
+<p>
 
-<br><br>
+Email: uddin81@uwindsor.ca
 
-GitHub  
-<br>
-https://github.com/Uddin45
+</p>
+
+<p>
+
+<a href="https://scholar.google.com/citations?user=esJNTh8AAAAJ">Google Scholar</a>
+
+</p>
+
+<p>
+
+<a href="https://github.com/Uddin45">GitHub</a>
 
 </p>
 
 </div>
+
+</div>
+
+</div>
+
 
 </body>
 </html>
