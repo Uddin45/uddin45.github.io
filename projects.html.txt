@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Projects | Ashab Uddin</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#eef2f7;
+margin:0;
+color:#333;
+}
+
+nav{
+background:white;
+padding:15px 40px;
+box-shadow:0px 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a{
+margin-right:25px;
+text-decoration:none;
+font-weight:bold;
+color:#2a4dbf;
+}
+
+.container{
+width:900px;
+margin:auto;
+padding:40px 0;
+}
+
+.project{
+background:white;
+padding:25px;
+border-radius:10px;
+margin-bottom:25px;
+box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.project h2{
+margin-top:0;
+color:#1a3c6e;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="research.html">Research</a>
+<a href="projects.html">Projects</a>
+<a href="publications.html">Publications</a>
+
+</nav>
+
+
+<div class="container">
+
+<h1>Research Projects</h1>
+
+
+<div class="project">
+
+<h2>Adaptive Reward Clustering and Sampling (ARCS)</h2>
+
+<p>
+A reinforcement learning experience clustering method designed
+to improve convergence stability and training efficiency in
+deep reinforcement learning systems.
+</p>
+
+</div>
+
+
+<div class="project">
+
+<h2>Multi-Agent Task Offloading in Vehicular Edge Computing</h2>
+
+<p>
+A multi-agent reinforcement learning framework for efficient
+task scheduling and resource allocation in dynamic vehicular
+edge computing environments.
+</p>
+
+</div>
+
+
+<div class="project">
+
+<h2>Stackelberg Game Based Resource Allocation</h2>
+
+<p>
+A hierarchical learning architecture integrating reinforcement
+learning with game-theoretic optimization to improve resource
+allocation in wireless cyber-physical networks.
+</p>
+
+</div>
+
+
+<div class="project">
+
+<h2>Priority-Aware Task Scheduling for MEC Systems</h2>
+
+<p>
+Research on adaptive task prioritization mechanisms
+to improve latency and energy efficiency in mobile
+edge computing systems.
+</p>
+
+</div>
+
+
+</div>
+
+</body>
+</html>
