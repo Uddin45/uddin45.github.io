@@ -28,22 +28,44 @@ color:#2a4dbf;
 }
 
 .container{
-width:900px;
+width:1000px;
 margin:auto;
 padding:40px 0;
 }
 
+/* GRID LAYOUT */
+
+.research-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+margin-top:30px;
+}
+
+/* CARD STYLE */
+
 .research-card{
 background:white;
 padding:25px;
-border-radius:10px;
-margin-bottom:25px;
-box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+border-radius:12px;
+box-shadow:0px 4px 12px rgba(0,0,0,0.12);
+transition:0.3s;
+}
+
+.research-card:hover{
+transform:translateY(-5px);
+box-shadow:0px 8px 20px rgba(0,0,0,0.18);
 }
 
 .research-card h2{
 margin-top:0;
 color:#1a3c6e;
+font-size:20px;
+}
+
+.research-card p{
+margin-top:10px;
+line-height:1.5;
 }
 
 </style>
@@ -66,16 +88,17 @@ color:#1a3c6e;
 
 <h1>Research</h1>
 
+<div class="research-grid">
+
 
 <div class="research-card">
 
 <h2>Deep Reinforcement Learning for Vehicular Edge Computing</h2>
 
 <p>
-Developing reinforcement learning frameworks for efficient task offloading
-and resource allocation in vehicular edge computing environments.
-The goal is to improve system efficiency while reducing latency
-and energy consumption in dynamic wireless networks.
+Developing reinforcement learning frameworks for efficient task
+offloading and resource allocation in vehicular edge computing
+environments to improve latency and energy efficiency.
 </p>
 
 </div>
@@ -86,10 +109,9 @@ and energy consumption in dynamic wireless networks.
 <h2>Multi-Agent Reinforcement Learning</h2>
 
 <p>
-Designing cooperative and decentralized multi-agent reinforcement learning
-methods for distributed decision making in wireless cyber-physical systems.
-This research investigates coordination strategies among agents
-under dynamic network conditions.
+Designing cooperative and decentralized reinforcement learning
+methods for distributed decision making in wireless cyber-physical
+systems and dynamic network environments.
 </p>
 
 </div>
@@ -100,9 +122,9 @@ under dynamic network conditions.
 <h2>Adaptive Reward Clustering and Sampling (ARCS)</h2>
 
 <p>
-A reinforcement learning experience sampling mechanism that improves
-training stability and convergence efficiency by clustering experiences
-based on reward characteristics.
+A novel reinforcement learning experience sampling mechanism
+that improves training stability and convergence efficiency by
+clustering experiences based on reward characteristics.
 </p>
 
 </div>
@@ -114,12 +136,14 @@ based on reward characteristics.
 
 <p>
 Applying artificial intelligence techniques to optimize communication
-and computation resources in next-generation wireless networks and
-cyber-physical systems.
+and computation resources in next-generation wireless networks
+and cyber-physical systems.
 </p>
 
 </div>
 
+
+</div>
 
 </div>
 
