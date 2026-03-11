@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
 <title>Ashab Uddin | AI Researcher</title>
 
 <style>
@@ -13,24 +14,26 @@ background:#eef2f7;
 color:#333;
 }
 
-.container{
-width:1000px;
-margin:auto;
-}
-
 /* NAVBAR */
 
 nav{
 background:white;
-padding:15px;
+padding:15px 40px;
 box-shadow:0px 2px 5px rgba(0,0,0,0.1);
 }
 
 nav a{
-margin-right:20px;
+margin-right:25px;
 text-decoration:none;
 font-weight:bold;
 color:#2a4dbf;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+width:1000px;
+margin:auto;
 }
 
 /* HERO SECTION */
@@ -38,14 +41,13 @@ color:#2a4dbf;
 .hero{
 display:flex;
 align-items:center;
-padding:50px 0;
+padding:60px 0;
 gap:40px;
 }
 
-.profile-img{
-width:200px;
-border-radius:12px;
-box-shadow:0px 5px 10px rgba(0,0,0,0.15);
+.hero img{
+width:180px;
+border-radius:10px;
 }
 
 .hero-text h1{
@@ -55,7 +57,10 @@ color:#1a3c6e;
 
 .hero-text p{
 margin-top:10px;
+font-size:16px;
 }
+
+/* BUTTONS */
 
 .buttons a{
 display:inline-block;
@@ -65,9 +70,10 @@ background:#2a4dbf;
 color:white;
 border-radius:6px;
 text-decoration:none;
+margin-top:10px;
 }
 
-/* CARDS */
+/* CARD CONTAINERS */
 
 .cards{
 display:flex;
@@ -75,16 +81,29 @@ gap:30px;
 margin-top:40px;
 }
 
-.card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+.card-link{
+text-decoration:none;
+color:inherit;
 flex:1;
 }
 
-h2{
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0px 8px 20px rgba(0,0,0,0.15);
+cursor:pointer;
+}
+
+.card h2{
 color:#1a3c6e;
+margin-top:0;
 }
 
 </style>
@@ -94,42 +113,82 @@ color:#1a3c6e;
 
 <body>
 
-<nav class="container">
+<nav>
 
 <a href="#">Home</a>
-<a href="#">Research</a>
-<a href="#">Publications</a>
-<a href="#">Projects</a>
-<a href="#">Contact</a>
 
 </nav>
 
 
 <div class="container">
 
+<!-- HOME SECTION -->
+
 <div class="hero">
 
-<img src="profile.jpg" class="profile-img">
+<img src="profile.jpg">
 
 <div class="hero-text">
 
 <h1>Ashab Uddin</h1>
 
 <p>
-PhD Candidate | Artificial Intelligence | Deep Reinforcement Learning | Wireless & Vehicular Networks | Multi-Agentic System    
-Department of Electrical & Computer Engineering  
+PhD Candidate | Artificial Intelligence | Deep Reinforcement Learning  
 University of Windsor
+</p>
+
+<p>
+PhD researcher in Artificial Intelligence and Deep Reinforcement Learning, specializing in multi-agent learning and scalable reinforcement learning frameworks for vehicular edge computing and wireless cyber-physical systems.
 </p>
 
 <div class="buttons">
 
-<a href="#publications">Publications</a>
-<a href="#research">Research</a>
 <a href="Final_Resume_AshabUddin_Git.pdf" download>Download CV</a>
 
+<a href="https://scholar.google.com/citations?user=esJNTh8AAAAJ">Google Scholar</a>
+
 </div>
 
 </div>
+
+</div>
+
+
+<!-- SEPARATE CONTAINERS -->
+
+<div class="cards">
+
+<a href="research.html" class="card-link">
+
+<div class="card">
+
+<h2>Research</h2>
+
+<p>
+Explore my research areas including deep reinforcement learning,
+multi-agent systems, and wireless AI for vehicular edge computing.
+</p>
+
+</div>
+
+</a>
+
+
+<a href="publications.html" class="card-link">
+
+<div class="card">
+
+<h2>Publications</h2>
+
+<p>
+View selected journal and conference publications in IEEE venues
+including TVT, VTC, and GLOBECOM.
+</p>
+
+</div>
+
+</a>
+
 
 </div>
 
@@ -137,61 +196,41 @@ University of Windsor
 
 <div class="cards">
 
+<a href="projects.html" class="card-link">
+
 <div class="card">
 
-<h2>About Me</h2>
+<h2>Projects</h2>
 
 <p>
-I am a PhD researcher working on deep reinforcement learning and multi-agent
-decision systems for vehicular edge computing networks. My research focuses
-on scalable AI frameworks for resource allocation and coordination in
-cyber-physical wireless systems.
+Research projects including ARCS experience sampling,
+multi-agent offloading frameworks, and hierarchical learning systems.
 </p>
 
 </div>
 
+</a>
 
+
+<a href="contact.html" class="card-link">
 
 <div class="card">
 
 <h2>Contact</h2>
 
 <p>
-
-Department of Electrical and Computer Engineering  
-University of Windsor  
-
-401 Sunset Avenue  
-Windsor, Ontario  
-Canada
-
-</p>
-
-<p>
-
-Email: uddin81@uwindsor.ca
-
-</p>
-
-<p>
-
-<a href="https://scholar.google.com/citations?user=esJNTh8AAAAJ">Google Scholar</a>
-
-</p>
-
-<p>
-
-<a href="https://github.com/Uddin45">GitHub</a>
-
+Find contact information and collaboration opportunities
+for research and academic partnerships.
 </p>
 
 </div>
 
-</div>
+</a>
 
 </div>
 
+</div>
 
 </body>
-</html>
 
+</html>
