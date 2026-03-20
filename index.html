@@ -2,19 +2,15 @@
 <html>
 
 <head>
-
 <title>Ashab Uddin | AI Researcher</title>
 
 <style>
-
 body{
 font-family:Arial;
 margin:0;
 background:#eef2f7;
 color:#333;
 }
-
-/* NAVBAR */
 
 nav{
 background:white;
@@ -29,14 +25,10 @@ font-weight:bold;
 color:#2a4dbf;
 }
 
-/* MAIN CONTAINER */
-
 .container{
 width:1000px;
 margin:auto;
 }
-
-/* HERO SECTION */
 
 .hero{
 display:flex;
@@ -60,8 +52,6 @@ margin-top:10px;
 font-size:16px;
 }
 
-/* BUTTONS */
-
 .buttons a{
 display:inline-block;
 padding:10px 18px;
@@ -72,8 +62,6 @@ border-radius:6px;
 text-decoration:none;
 margin-top:10px;
 }
-
-/* CARD CONTAINERS */
 
 .cards{
 display:flex;
@@ -129,17 +117,9 @@ font-size:16px;
 .demo button:hover{
 background:#1d36a0;
 }
-
-#result{
-margin-top:15px;
-font-weight:bold;
-font-size:16px;
-}
-
 </style>
 
 </head>
-
 
 <body>
 
@@ -147,10 +127,9 @@ font-size:16px;
 <a href="#">Home</a>
 </nav>
 
-
 <div class="container">
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 
 <div class="hero">
 
@@ -165,112 +144,74 @@ PhD Candidate | Artificial Intelligence | Deep Reinforcement Learning | Multi-Ag
 </p>
 
 <p>
-PhD researcher in Artificial Intelligence and Deep Reinforcement Learning,
-specializing in multi-agent learning and scalable reinforcement learning
-frameworks for vehicular edge computing and wireless cyber-physical systems.
+PhD researcher specializing in multi-agent learning and scalable reinforcement learning
+frameworks for vehicular edge computing and cyber-physical systems.
 </p>
 
 <div class="contact">
-
 <b>Email:</b> uddin81@uwindsor.ca <br>
-
 <b>Department:</b> Electrical & Computer Engineering <br>
 University of Windsor <br>
-
-<b>Address:</b>  
-401 Sunset Avenue <br>
-Windsor, Ontario N9B 3P4 <br>
-Canada
-
+<b>Address:</b> Windsor, Ontario, Canada
 </div>
 
 <div class="buttons">
-
 <a href="Final_Resume_AshabUddin_Git.pdf" download>Download CV</a>
-
 <a href="https://scholar.google.com/citations?user=esJNTh8AAAAJ">Google Scholar</a>
-
 <a href="https://www.linkedin.com/in/ashab-uddin-549b576b/">LinkedIn</a>
-
 </div>
 
 </div>
-
 </div>
-
 
 <!-- CARDS -->
 
 <div class="cards">
-
 <a href="research.html" class="card-link">
 <div class="card">
 <h2>Research</h2>
-<p>Explore my research areas ...</p>
+<p>Explore my research areas...</p>
 </div>
 </a>
 
 <a href="publications.html" class="card-link">
 <div class="card">
 <h2>Publications</h2>
-<p>View selected journal and conference publications ...</p>
+<p>View selected publications...</p>
 </div>
 </a>
-
 </div>
 
-
 <div class="cards">
-
 <a href="projects.html" class="card-link">
 <div class="card">
 <h2>Projects</h2>
-<p>Research projects ...</p>
+<p>Research projects...</p>
 </div>
 </a>
-
 </div>
 
+<!-- DRL DEMO -->
 
 <div class="demo">
-
 <h2>DRL Cloud Demo 🚀</h2>
 
 <button onclick="openAPI()">Run DRL Model</button>
 
-<p id="result"></p>
+<p style="margin-top:10px;">
+Opens live AWS inference API
+</p>
 
 </div>
 
 </div>
-
 
 <!-- SCRIPT -->
 
 <script>
-
-async function runModel() {
-
-  document.getElementById("result").innerHTML = "Running...";
-
-  try {
-    const res = await fetch("http://15.223.233.226:8000/predict", {
-      method: "POST"
-    });
-
-    const data = await res.json();
-
-    document.getElementById("result").innerHTML =
-      "Latency: " + data.latency + " | Energy: " + data.energy;
-
-  } catch (err) {
-
-    document.getElementById("result").innerHTML =
-      "❌ Cannot connect to AWS server";
-
-  }
+function openAPI() {
+  window.open("http://15.223.233.226:8000/docs", "_blank");
 }
-
 </script>
 
 </body>
