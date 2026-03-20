@@ -239,7 +239,36 @@ Research projects ...
 
 </div>
 
+
+<h2>DRL Cloud Demo 🚀</h2>
+
+<button onclick="runModel()">Run DRL Model</button>
+
+<p id="result"></p>
+
+<script>
+async function runModel() {
+  try {
+    const res = await fetch("http://15.223.233.226:8000/predict", {
+      method: "POST"
+    });
+
+    const data = await res.json();
+
+    document.getElementById("result").innerHTML =
+      "Latency: " + data.latency + " | Energy: " + data.energy;
+
+  } catch (err) {
+    document.getElementById("result").innerHTML =
+      "Error connecting to AWS";
+  }
+}
+</script>
+
 </body>
+
+
+  
 
 </html>
 
