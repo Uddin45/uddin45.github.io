@@ -111,6 +111,31 @@ margin-top:15px;
 line-height:1.6;
 }
 
+.demo{
+margin-top:50px;
+text-align:center;
+}
+
+.demo button{
+padding:12px 20px;
+background:#2a4dbf;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-size:16px;
+}
+
+.demo button:hover{
+background:#1d36a0;
+}
+
+#result{
+margin-top:15px;
+font-weight:bold;
+font-size:16px;
+}
+
 </style>
 
 </head>
@@ -119,15 +144,13 @@ line-height:1.6;
 <body>
 
 <nav>
-
 <a href="#">Home</a>
-
 </nav>
 
 
 <div class="container">
 
-<!-- HOME SECTION -->
+<!-- HERO SECTION -->
 
 <div class="hero">
 
@@ -147,8 +170,6 @@ specializing in multi-agent learning and scalable reinforcement learning
 frameworks for vehicular edge computing and wireless cyber-physical systems.
 </p>
 
-<!-- CONTACT BELOW ABOUT -->
-
 <div class="contact">
 
 <b>Email:</b> uddin81@uwindsor.ca <br>
@@ -167,13 +188,9 @@ Canada
 
 <a href="Final_Resume_AshabUddin_Git.pdf" download>Download CV</a>
 
-<a href="https://scholar.google.com/citations?user=esJNTh8AAAAJ">
-Google Scholar
-</a>
+<a href="https://scholar.google.com/citations?user=esJNTh8AAAAJ">Google Scholar</a>
 
-<a href="https://www.linkedin.com/in/ashab-uddin-549b576b/">
-LinkedIn
-</a>
+<a href="https://www.linkedin.com/in/ashab-uddin-549b576b/">LinkedIn</a>
 
 </div>
 
@@ -182,37 +199,22 @@ LinkedIn
 </div>
 
 
-<!-- SEPARATE CONTAINERS -->
+<!-- CARDS -->
 
 <div class="cards">
 
 <a href="research.html" class="card-link">
-
 <div class="card">
-
 <h2>Research</h2>
-
-<p>
-Explore my research areas ...
-</p>
-
+<p>Explore my research areas ...</p>
 </div>
-
 </a>
 
-
 <a href="publications.html" class="card-link">
-
 <div class="card">
-
 <h2>Publications</h2>
-
-<p>
-View selected journal and conference publications ...
-</p>
-
+<p>View selected journal and conference publications ...</p>
 </div>
-
 </a>
 
 </div>
@@ -221,24 +223,18 @@ View selected journal and conference publications ...
 <div class="cards">
 
 <a href="projects.html" class="card-link">
-
 <div class="card">
-
 <h2>Projects</h2>
-
-<p>
-Research projects ...
-</p>
-
+<p>Research projects ...</p>
 </div>
-
 </a>
 
 </div>
 
 
-</div>
+<!-- DRL DEMO -->
 
+<div class="demo">
 
 <h2>DRL Cloud Demo 🚀</h2>
 
@@ -246,8 +242,19 @@ Research projects ...
 
 <p id="result"></p>
 
+</div>
+
+</div>
+
+
+<!-- SCRIPT -->
+
 <script>
+
 async function runModel() {
+
+  document.getElementById("result").innerHTML = "Running...";
+
   try {
     const res = await fetch("http://15.223.233.226:8000/predict", {
       method: "POST"
@@ -259,18 +266,15 @@ async function runModel() {
       "Latency: " + data.latency + " | Energy: " + data.energy;
 
   } catch (err) {
+
     document.getElementById("result").innerHTML =
-      "Error connecting to AWS";
+      "❌ Cannot connect to AWS server";
+
   }
 }
+
 </script>
 
 </body>
 
-
-  
-
 </html>
-
-
-
