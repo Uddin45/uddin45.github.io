@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
 <title>Projects | Ashab Uddin</title>
 
 <style>
-
 body{
 font-family:Arial;
 background:#eef2f7;
@@ -33,6 +30,17 @@ margin:auto;
 padding:40px 0;
 }
 
+h1{
+color:#1a3c6e;
+}
+
+h2.section-title{
+margin-top:45px;
+color:#2a4dbf;
+border-bottom:2px solid #2a4dbf;
+padding-bottom:8px;
+}
+
 .project{
 background:white;
 padding:25px;
@@ -46,79 +54,124 @@ margin-top:0;
 color:#1a3c6e;
 }
 
+.project p{
+line-height:1.6;
+}
+
+.tech{
+font-weight:bold;
+color:#1a3c6e;
+}
 </style>
-
 </head>
-
 
 <body>
 
 <nav>
-
 <a href="index.html">Home</a>
 <a href="research.html">Research</a>
 <a href="projects.html">Projects</a>
 <a href="publications.html">Publications</a>
-
 </nav>
-
 
 <div class="container">
 
-<h1>Research Projects</h1>
+<h1>Projects</h1>
 
+<h2 class="section-title">AI & Research Projects</h2>
 
 <div class="project">
-
 <h2>Adaptive Reward Clustering and Sampling (ARCS)</h2>
-
 <p>
-A reinforcement learning experience clustering method designed
-to improve convergence stability and training efficiency in
-deep reinforcement learning systems.
+Developed an adaptive reward-based experience clustering and sampling method
+to improve replay efficiency, convergence stability, and learning performance
+in deep reinforcement learning systems.
 </p>
-
+<p class="tech">Technologies: Python, PyTorch, Deep Reinforcement Learning, Experience Replay</p>
 </div>
-
 
 <div class="project">
-
-<h2>Multi-Agent Task Offloading in Vehicular Edge Computing</h2>
-
+<h2>DRL-Based Resource Allocation in Vehicular Edge Computing</h2>
 <p>
-A multi-agent reinforcement learning framework for efficient
-task scheduling and resource allocation in dynamic vehicular
-edge computing environments.
+Designed reinforcement learning models for latency-aware, energy-efficient,
+and constraint-aware task offloading in vehicular edge computing environments.
+The framework optimizes task completion, communication resources, and system reliability.
 </p>
-
+<p class="tech">Technologies: DRL, DQN, DDPG, Vehicular Edge Computing, Wireless Resource Allocation</p>
 </div>
-
 
 <div class="project">
-
-<h2>Stackelberg Game Based Resource Allocation</h2>
-
+<h2>Multi-Agent Reinforcement Learning for Distributed Control</h2>
 <p>
-A hierarchical learning architecture integrating reinforcement
-learning with game-theoretic optimization to improve resource
-allocation in wireless cyber-physical networks.
+Developed multi-agent reinforcement learning frameworks for coordinated
+decision-making under uncertainty in distributed cyber-physical systems,
+with emphasis on stability, scalability, and reliable system operation.
 </p>
-
+<p class="tech">Technologies: MARL, CTDE, MADDPG, COMA, Distributed Systems</p>
 </div>
-
 
 <div class="project">
-
-<h2>Priority-Aware Task Scheduling for MEC Systems</h2>
-
+<h2>Bilevel Leader–Follower Optimization Framework</h2>
 <p>
-Research on adaptive task prioritization mechanisms
-to improve latency and energy efficiency in mobile
-edge computing systems.
+Designed a hierarchical leader–follower reinforcement learning framework
+for constrained resource allocation, combining centralized coordination
+with distributed agent-level decision-making.
 </p>
-
+<p class="tech">Technologies: Stackelberg Game, CTDE, Multi-Agent DRL, Resource Allocation</p>
 </div>
 
+<div class="project">
+<h2>LSTM-MHA-Assisted DRL Caching for Vehicular Edge Networks</h2>
+<p>
+Contributed to a proactive edge caching framework using LSTM, multi-head attention,
+and DDQN to improve cache hit ratio, latency, and quality of experience in
+vehicular edge networks.
+</p>
+<p class="tech">Technologies: LSTM, Multi-Head Attention, DDQN, Edge Caching, Cabspotting Dataset</p>
+</div>
+
+<div class="project">
+<h2>Traffic Sign Classification using CNNs</h2>
+<p>
+Developed and optimized a CNN-based traffic sign classification system using
+the GTSRB dataset, comparing learning rates, batch sizes, network structures,
+and optimizers to analyze convergence and classification performance.
+</p>
+<p class="tech">Technologies: CNN, TensorFlow/Keras, Python, Computer Vision, GTSRB Dataset</p>
+</div>
+
+<h2 class="section-title">Industrial Automation Projects</h2>
+
+<div class="project">
+<h2>Schneider ETAP-Based Energy Management System</h2>
+<p>
+Implemented a Schneider ETAP-based EMS-SCADA system using Modbus TCP/IP
+communication to integrate field energy meters, PLCs, and plant-level
+monitoring systems for real-time energy monitoring, load analysis, and
+energy-efficiency improvement.
+</p>
+<p class="tech">Technologies: Schneider ETAP, SCADA, Modbus TCP/IP, PLC, Energy Monitoring</p>
+</div>
+
+<div class="project">
+<h2>33 kV/11 kV/0.4 kV, 4 MVA Substation Installation and Commissioning</h2>
+<p>
+Led installation and commissioning of industrial substations involving
+power distribution, protection coordination, transformer integration,
+and electrical infrastructure setup for large-scale manufacturing systems.
+</p>
+<p class="tech">Technologies: Power Distribution, Protection Coordination, Industrial Electrical Systems</p>
+</div>
+
+<div class="project">
+<h2>600 BPM KRONES CSD Beverage Production Line</h2>
+<p>
+Led installation and commissioning of a fully automated high-speed beverage
+production line, integrating PLC, VFD, SCADA, and Ethernet-based communication
+systems for real-time monitoring, synchronization, and production control.
+</p>
+<p class="tech">Technologies: KRONES, PLC, VFD, SCADA, Industrial Ethernet, High-Speed Automation</p>
+</div>
 
 </div>
 
