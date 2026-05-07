@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Ashab Uddin | AI Researcher</title>
+
+<style>
+body{
+font-family:Arial;
+margin:0;
+background:#eef2f7;
+color:#333;
+}
+
+nav{
+background:white;
+padding:15px 40px;
+box-shadow:0px 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a{
+margin-right:25px;
+text-decoration:none;
+font-weight:bold;
+color:#2a4dbf;
+}
+
+.container{
+width:1000px;
+margin:auto;
+}
+
+.hero{
+display:flex;
+align-items:center;
+padding:60px 0;
+gap:40px;
+}
+
+.hero img{
+width:180px;
+border-radius:10px;
+}
+
+.hero-text h1{
+margin:0;
+color:#1a3c6e;
+}
+
+.hero-text p{
+margin-top:10px;
+font-size:16px;
+}
+
+.buttons a{
+display:inline-block;
+padding:10px 18px;
+margin-right:10px;
+background:#2a4dbf;
+color:white;
+border-radius:6px;
+text-decoration:none;
+margin-top:10px;
+}
+
+.cards{
+display:flex;
+gap:30px;
+margin-top:40px;
+}
+
+.card-link{
+text-decoration:none;
+color:inherit;
+flex:1;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0px 8px 20px rgba(0,0,0,0.15);
+cursor:pointer;
+}
+
+.card h2{
+color:#1a3c6e;
+margin-top:0;
+}
+
+.contact{
+margin-top:15px;
+line-height:1.6;
+}
+
+.demo{
+margin-top:50px;
+text-align:center;
+}
+
+.demo button{
+padding:12px 20px;
+background:#2a4dbf;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-size:16px;
+}
+
+.demo button:hover{
+background:#1d36a0;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="#">Home</a>
+</nav>
+
+<div class="container">
+
+<!-- HERO -->
+
+<div class="hero">
+
+<img src="profile.jpg">
+
+<div class="hero-text">
+
+<h1>Ashab Uddin</h1>
+
+<p>
+PhD Candidate | Artificial Intelligence | Deep Reinforcement Learning | Multi-Agent Systems
+</p>
+
+<p>
+PhD researcher specializing in multi-agent learning and scalable reinforcement learning
+frameworks for vehicular edge computing and cyber-physical systems.
+</p>
+
+<div class="contact">
+<b>Email:</b> uddin81@uwindsor.ca <br>
+<b>Department:</b> Electrical & Computer Engineering <br>
+University of Windsor <br>
+<b>Address:</b> Windsor, Ontario, Canada
+</div>
+
+<div class="buttons">
+<a href="Resume_Mitcas_AU_290326.pdf" download>Download CV</a>
+<a href="https://scholar.google.com/citations?user=esJNTh8AAAAJ">Google Scholar</a>
+<a href="https://www.linkedin.com/in/ashab-uddin-549b576b/">LinkedIn</a>
+</div>
+
+</div>
+</div>
+
+<!-- CARDS -->
+
+<div class="cards">
+<a href="research.html" class="card-link">
+<div class="card">
+<h2>Research</h2>
+<p>Explore my research areas...</p>
+</div>
+</a>
+
+<a href="publications.html" class="card-link">
+<div class="card">
+<h2>Publications</h2>
+<p>View selected publications...</p>
+</div>
+</a>
+</div>
+
+<div class="cards">
+<a href="projects.html" class="card-link">
+<div class="card">
+<h2>Projects</h2>
+<p>Research projects...</p>
+</div>
+</a>
+</div>
+
+<!-- DRL DEMO -->
+
+<div class="demo">
+<h2>DRL Cloud Demo 🚀</h2>
+
+<button onclick="openAPI()">Run DRL Model</button>
+
+<p style="margin-top:10px;">
+Opens live AWS inference API
+</p>
+
+</div>
+
+</div>
+
+<!-- SCRIPT -->
+
+<script>
+function openAPI() {
+  window.open("http://15.223.233.226:8000/docs", "_blank");
+}
+</script>
+
+</body>
+
+</html>
