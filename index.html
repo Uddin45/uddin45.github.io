@@ -38,18 +38,32 @@ gap:40px;
 }
 
 .hero img{
-width:180px;
-border-radius:10px;
+width:190px;
+border-radius:12px;
+box-shadow:0px 5px 15px rgba(0,0,0,0.15);
 }
 
 .hero-text h1{
 margin:0;
 color:#1a3c6e;
+font-size:42px;
+}
+
+.hero-text h3{
+margin-top:10px;
+font-weight:normal;
+color:#2a4dbf;
 }
 
 .hero-text p{
-margin-top:10px;
-font-size:16px;
+margin-top:15px;
+font-size:17px;
+line-height:1.7;
+}
+
+.highlight{
+font-weight:bold;
+color:#1a3c6e;
 }
 
 .buttons a{
@@ -61,6 +75,11 @@ color:white;
 border-radius:6px;
 text-decoration:none;
 margin-top:10px;
+transition:0.3s;
+}
+
+.buttons a:hover{
+background:#1d36a0;
 }
 
 .cards{
@@ -95,13 +114,14 @@ margin-top:0;
 }
 
 .contact{
-margin-top:15px;
-line-height:1.6;
+margin-top:18px;
+line-height:1.7;
 }
 
 .demo{
-margin-top:50px;
+margin-top:60px;
 text-align:center;
+padding-bottom:60px;
 }
 
 .demo button{
@@ -125,11 +145,12 @@ background:#1d36a0;
 
 <nav>
 <a href="#">Home</a>
+<a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
+<a href="projects.html">Projects</a>
 </nav>
 
 <div class="container">
-
-<!-- HERO -->
 
 <div class="hero">
 
@@ -139,20 +160,30 @@ background:#1d36a0;
 
 <h1>Ashab Uddin</h1>
 
+<h3>
+AI Researcher | Deep Reinforcement Learning | Multi-Agent Systems
+</h3>
+
 <p>
-PhD Candidate | Artificial Intelligence | Deep Reinforcement Learning | Multi-Agent Systems
+PhD researcher specializing in <span class="highlight">Deep Reinforcement Learning (DRL)</span>,
+<span class="highlight">Multi-Agent Systems</span>,
+<span class="highlight">Vehicular Edge Computing</span>,
+and AI-driven optimization for cyber-physical and wireless edge systems.
 </p>
 
 <p>
-PhD researcher specializing in multi-agent learning and scalable reinforcement learning
-frameworks for vehicular edge computing and cyber-physical systems.
+My research focuses on scalable and constraint-aware decision-making frameworks
+for autonomous and real-time environments, including CTDE-based MARL,
+resource allocation, safe reinforcement learning, and distributed AI systems.
+I also bring <span class="highlight">10+ years of industrial automation experience</span>
+in PLC, SCADA, VFD, and large-scale industrial control systems.
 </p>
 
 <div class="contact">
 <b>Email:</b> uddin81@uwindsor.ca <br>
 <b>Department:</b> Electrical & Computer Engineering <br>
 University of Windsor <br>
-<b>Address:</b> Windsor, Ontario, Canada
+<b>Location:</b> Windsor, Ontario, Canada
 </div>
 
 <div class="buttons">
@@ -164,49 +195,58 @@ University of Windsor <br>
 </div>
 </div>
 
-<!-- CARDS -->
-
 <div class="cards">
+
 <a href="research.html" class="card-link">
 <div class="card">
 <h2>Research</h2>
-<p>Explore my research areas...</p>
+<p>
+Deep Reinforcement Learning, Multi-Agent Systems,
+Vehicular Edge Computing, AI Optimization,
+Safe RL, and Distributed Learning.
+</p>
 </div>
 </a>
 
 <a href="publications.html" class="card-link">
 <div class="card">
 <h2>Publications</h2>
-<p>View selected publications...</p>
+<p>
+IEEE Transactions, GLOBECOM, VTC,
+and research contributions in DRL and edge intelligence.
+</p>
 </div>
 </a>
+
 </div>
 
 <div class="cards">
+
 <a href="projects.html" class="card-link">
 <div class="card">
 <h2>Projects</h2>
-<p>Research projects...</p>
+<p>
+Industrial automation systems, DRL frameworks,
+edge intelligence, and cyber-physical AI applications.
+</p>
 </div>
 </a>
+
 </div>
 
-<!-- DRL DEMO -->
-
 <div class="demo">
-<h2>DRL Cloud Demo 🚀</h2>
+
+<h2>Cloud DRL Inference Demo 🚀</h2>
 
 <button onclick="openAPI()">Run DRL Model</button>
 
 <p style="margin-top:10px;">
-Opens live AWS inference API
+Live AWS-hosted inference API demonstration
 </p>
 
 </div>
 
 </div>
-
-<!-- SCRIPT -->
 
 <script>
 function openAPI() {
