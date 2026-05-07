@@ -28,14 +28,18 @@ color:#2a4dbf;
 }
 
 .container{
-width:900px;
+max-width:900px;
+width:90%;
 margin:auto;
 padding:40px 0;
 }
 
 .section-title{
-margin-top:40px;
+margin-top:45px;
+margin-bottom:20px;
 color:#1a3c6e;
+border-bottom:2px solid #2a4dbf;
+padding-bottom:8px;
 }
 
 .paper{
@@ -44,27 +48,50 @@ padding:25px;
 border-radius:10px;
 margin-bottom:25px;
 box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.paper:hover{
+transform:translateY(-5px);
+box-shadow:0px 8px 20px rgba(0,0,0,0.15);
 }
 
 .paper h3{
 margin-top:0;
 color:#1a3c6e;
+line-height:1.5;
+}
+
+.paper p{
+line-height:1.6;
 }
 
 .btn{
 display:inline-block;
-padding:6px 12px;
+padding:8px 14px;
 background:#2a4dbf;
 color:white;
 text-decoration:none;
 border-radius:5px;
-margin-right:6px;
+margin-top:10px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#1d36a0;
+}
+
+.scholar{
+margin-top:50px;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0px 3px 10px rgba(0,0,0,0.1);
 }
 
 </style>
 
 </head>
-
 
 <body>
 
@@ -77,11 +104,14 @@ margin-right:6px;
 
 </nav>
 
-
 <div class="container">
 
 <h1>Publications</h1>
 
+<p>
+Selected journal and conference publications in Deep Reinforcement Learning,
+Multi-Agent Systems, Vehicular Edge Computing, and AI-driven optimization.
+</p>
 
 <!-- JOURNAL ARTICLES -->
 
@@ -97,11 +127,9 @@ Counterfactual Multi-Agent Deep Reinforcement Learning for Efficient Task Offloa
 IEEE Transactions on Vehicular Technology, 2025
 </p>
 
-<a href="#" class="btn">PDF</a>
-<a href="#" class="btn">IEEE</a>
+<a href="#" class="btn">IEEE Xplore</a>
 
 </div>
-
 
 <div class="paper">
 
@@ -110,20 +138,16 @@ Adaptive Prioritization and Task Offloading in Vehicular Edge Computing Through 
 </h3>
 
 <p>
-IEEE Transactions on Vehicular Technology, 2024
+IEEE Transactions on Vehicular Technology, Vol. 74, No. 3, 2024
 </p>
 
-<a href="#" class="btn">PDF</a>
-<a href="#" class="btn">IEEE</a>
+<a href="#" class="btn">IEEE Xplore</a>
 
 </div>
-
-
 
 <!-- CONFERENCE PAPERS -->
 
 <h2 class="section-title">Conference Papers</h2>
-
 
 <div class="paper">
 
@@ -135,10 +159,9 @@ Adaptive Reward Clustering for Efficient Deep Reinforcement Learning in Vehicula
 IEEE GLOBECOM 2025
 </p>
 
-<a href="#" class="btn">PDF</a>
+<a href="#" class="btn">IEEE Xplore</a>
 
 </div>
-
 
 <div class="paper">
 
@@ -150,10 +173,9 @@ Multi-Agent Task Prioritization and Offloading in Vehicular Edge Computing Envir
 IEEE VTC Fall 2025
 </p>
 
-<a href="#" class="btn">PDF</a>
+<a href="#" class="btn">IEEE Xplore</a>
 
 </div>
-
 
 <div class="paper">
 
@@ -165,18 +187,20 @@ Prioritized Task Offloading in Vehicular Edge Computing Using Deep Reinforcement
 IEEE VTC Spring 2024
 </p>
 
-<a href="#" class="btn">PDF</a>
+<a href="#" class="btn">IEEE Xplore</a>
 
 </div>
 
+<div class="scholar">
 
-<p style="margin-top:40px;">
-For the complete and updated publication list please visit my  
+<p>
+For the complete and updated publication list, please visit my
 <a href="https://scholar.google.com/citations?user=esJNTh8AAAAJ">
-Google Scholar profile
+Google Scholar Profile
 </a>.
 </p>
 
+</div>
 
 </div>
 
